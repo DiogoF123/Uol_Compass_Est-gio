@@ -1,5 +1,5 @@
 
-Bibliográfia:
+Bibliográfia:\
 – Install Ubuntu Desktop, Canonical Ltd. site:
 “https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview “ Acesso em: 06/10/2024\
 – Installation guide, Arch Wiki site: “https://wiki.archlinux.org/title/Installation_guide “ Acesso
