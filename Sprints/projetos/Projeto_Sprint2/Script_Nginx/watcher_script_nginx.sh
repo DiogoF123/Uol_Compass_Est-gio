@@ -8,7 +8,7 @@ SERVICE_NAME="nginx"
 
 # Função para obter a data e hora atual
 get_datetime() {
-    date "+%Y-%m-%d %H:%M:%S"
+    date "+%d-%m-%Y %H:%M:%S"
 }
 
 # Verifica se o serviço Nginx está em execução
@@ -24,9 +24,9 @@ fi
 
 # Cria a mensagem de saída
 OUTPUT="
-Data_hora: $(get_datetime) 
-Servi�o: $SERVICE_NAME 
-Status_servi�o: $STATUS 
+Data_hora: $(get_datetime)
+Servi�o: $SERVICE_NAME
+Status_servi�o: $STATUS
 Mensagem_output: $MESSAGE"
 
 # Escreve a saída no arquivo apropriado

@@ -4,12 +4,12 @@
 <p>
 Script referente a proposta individual da Sprint 2:
 <br>
--Setup de um servidor Nginx
+- Setup de um servidor Nginx
 <br>
--Preparacao de Script Bash para conferiencia do Status
+- Preparacao de Script Bash para conferiencia do Status
 do servidor Nginx
 <br>
--Automacao da checkagem pelo script a cada 5 minutos
+- Automacao da checkagem pelo script a cada 5 minutos
 
 </p>
 
