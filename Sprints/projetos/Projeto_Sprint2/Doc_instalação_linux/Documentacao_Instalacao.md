@@ -13,7 +13,9 @@ Vai aparecer uma lista das distribuições Linux na loja online.
 - Queremos uma versão do Ubuntu superior ao 20.04, como requisitado na atividade..
 Digite e execute wsl --install Ubuntu-22.04 ou a versão desejada.
 </details>
+
 ### II) Instalação de Sistema Linux: utilizando instalador de distro ubuntu
+
 <details>
 1. Preparação
    
