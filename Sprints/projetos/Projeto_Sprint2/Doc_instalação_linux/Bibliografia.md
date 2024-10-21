@@ -1,5 +1,7 @@
 
 Bibliográfia:\
+
+- Como instalar o Linux no Windows com o WSL, Site:"https://learn.microsoft.com/pt-br/windows/wsl/install" Acesso em: 13/10/2024\
 – Install Ubuntu Desktop, Canonical Ltd. site:
 “https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview “ Acesso em: 06/10/2024\
 – Installation guide, Arch Wiki site: “https://wiki.archlinux.org/title/Installation_guide “ Acesso
