@@ -1,5 +1,5 @@
 ## Documentação Projeto Sprint 1 - Grupo 5:
-# I) Instalação de WSL: utilizando instalador de distro
+### I) Instalação de WSL: utilizando instalador de distro
 ubuntu
 O WSL (não a liga mundial de surfe) é um Subsistema do Windows que disponibiliza
 um ambiente Linux compatível com o sistema da Microsoft.
@@ -13,7 +13,7 @@ Vai aparecer uma lista das distribuições Linux na loja online.
 - Queremos uma versão do Ubuntu superior ao 20.04, como requisitado na atividade..
 Digite e execute wsl --install Ubuntu-22.04 ou a versão desejada.
 
-# II) Instalação de Sistema Linux: utilizando instalador de
+### II) Instalação de Sistema Linux: utilizando instalador de
 distro ubuntu
 
 1. Preparação
@@ -56,4 +56,4 @@ distro ubuntu
 7.2. Execute atualizações do sistema.
 7.3. Instale drivers adicionais, se necessário.
 7.4. Personalize seu ambiente de trabalho.
-
+### Watcher Script Nginx
