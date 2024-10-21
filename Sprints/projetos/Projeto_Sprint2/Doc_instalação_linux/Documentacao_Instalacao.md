@@ -1,17 +1,14 @@
 ## Documentação Projeto Sprint 1 - Grupo 5:
 ### I) Instalação de WSL Ubuntu no Windows
 <details>
-O WSL é um Subsistema do Windows que disponibiliza
-um ambiente Linux compatível com o sistema da Microsoft.
-Existem duas versões, o WSL 1 e o WSL 2, onde a segunda aumenta o desempenho
-do sistema de arquivos e é a versão padrão atual para instalar uma distribuição Linux
-no Windows.
-- Clique no botão do Windows, digite Powershell e execute o programa. Você deve ver
-uma interface de linha de comando.
-- Primeiro vamos ver as versões disponíveis. Digite wsl --list --online e aperte enter.
-Vai aparecer uma lista das distribuições Linux na loja online.
-- Queremos uma versão do Ubuntu superior ao 20.04, como requisitado na atividade..
-Digite e execute wsl --install Ubuntu-22.04 ou a versão desejada.
+1. Powershell
+1.1. Aperte o botão do Windows (tecla Super) e digite Powershell
+
+2. Terminal
+2.1. Consulte as versões de linux disponíveis com o comando:
+`wsl --list --online`
+2.2. Faça a instalação deseja de acordo com o nome/id no caso do ubuntu o comando seria:
+`wsl --install Ubuntu-22.04`
 </details>
 
 ### II) Instalação de Sistema Linux: utilizando instalador de distro ubuntu
