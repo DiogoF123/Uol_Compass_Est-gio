@@ -13,7 +13,7 @@ do servidor Nginx
 
 </p>
 
-###  <a href= Sprint-1 > Documentacao de Instalacao de Linux </a>
+###  <a href= Doc_instalação_linux > Documentacao de Instalacao de Linux </a>
 <p>
 O Projeto também propoz a preparação de uma documentação sobre a instalação de um client linux, com enfoque no uso do WSL de Ubuntu no Windows. </p>
 
