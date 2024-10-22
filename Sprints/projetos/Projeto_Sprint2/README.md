@@ -7,9 +7,9 @@ Script referente a proposta individual da Sprint 2:
 - Setup de um servidor Nginx
 <br>
 - Preparacao de Script Bash para conferiencia do Status
-do servidor Nginx
+do servidor Nginx ( systemctl our service)
 <br>
-- Automacao da checkagem pelo script a cada 5 minutos
+- Automacao da checkagem pelo script a cada 5 minutos (cronjob or while loop)
 
 </p>
 
