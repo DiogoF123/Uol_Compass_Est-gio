@@ -1,2 +1,2 @@
-#dont forget making the script execitable
+#dont forget making the script executable
 */5 * * * * watcher_script_nginx.sh
