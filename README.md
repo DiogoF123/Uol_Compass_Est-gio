@@ -1,9 +1,6 @@
 # Uol_Compass_Estágio
-
-
-
-<h2 align=center> Compass.UOL <img src="https://logospng.org/download/uol/logo-uol-icon-256.png" width="27"/> - Trilha de Aprendizagem AWS </h1>
-
+## <h2 align=center> Compass.UOL <img src="https://logospng.org/download/uol/logo-uol-icon-256.png" width="27"/> - Trilha de Aprendizagem AWS </h1>
+Repositório de Trabalho para anotações, testes, projetos e comentários sobre as atividades propostas durante o estágio na UOL COMPASS de DevSecOps.
 
 ## Sprints - Testes
 <a href=Sprints/>Lista Geral das Sprints </a>
