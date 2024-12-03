@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: ./apache
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - efs-volume:/var/www/html
+      - ./apache/httpd.conf:/etc/httpd/conf/httpd.conf
+    depends_on:
+      - wordpress
+    restart: always
+
+  wordpress:
+    image: wordpress:php7.4-apache
+    volumes:
+      - efs-volume:/var/www/html
+      - ./wordpress/wp-config.php:/var/www/html/wp-config.php
+    environment:
+      - WORDPRESS_DB_HOST=db
+      - WORDPRESS_DB_USER=${WORDPRESS_DB_USER}
+      - WORDPRESS_DB_PASSWORD=${WORDPRESS_DB_PASSWORD}
+      - WORDPRESS_DB_NAME=${WORDPRESS_DB_NAME}
+    depends_on:
+      - db
+    restart: always
+
+  db:
+    image: mysql:5.7
+    volumes:
+      - db_data:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+    restart: always
+
+volumes:
+  efs-volume:
+    driver: local
+    driver_opts:
+      type: nfs4
+      o: addr=${EFS_FILESYSTEM_ID}.efs.us-east-1.amazonaws.com,nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport
+      device: :/
+  db_data:

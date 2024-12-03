@@ -1,0 +1,16 @@
+FROM amazonlinux:2023
+
+# Install Apache and PHP
+RUN dnf update -y && \
+    dnf install -y httpd httpd-tools mod_ssl \
+    php php-common php-pear \
+    php-cli php-curl php-mbstring php-gd php-mysqlnd php-json \
+    php-xml php-fpm php-intl php-zip && \
+    dnf clean all
+
+# Expose ports
+EXPOSE 80 443
+
+# Start Apache
+CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
+
