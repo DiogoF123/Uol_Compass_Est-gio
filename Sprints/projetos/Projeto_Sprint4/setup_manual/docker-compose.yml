@@ -1,0 +1,16 @@
+# Esse Dockerfile é acompanhado de um Script para utilização das variáveis dinâmicas dos recursos AWS
+services:
+  wordpress:
+    image: wordpress:latest
+    restart: always
+    ports:
+      - "80:80"
+    environment:
+    # debug mode
+      WORDPRESS_DEBUG: 1
+      WORDPRESS_DB_HOST: $RDS_HOST_ADDR
+      WORDPRESS_DB_USER: $DB_USERNAME
+      WORDPRESS_DB_PASSWORD: $DB_PASSWORD
+      WORDPRESS_DB_NAME: wordpressdb
+    volumes:
+      - /efs/wordpress-docker/wordpress-files:/var/www/html
