@@ -397,6 +397,7 @@ aws ec2 associate-route-table \
 ~~~~
 
 ### 4 Criação e Configuração dos Security Groups
+![Tabelas](Imagens/imagen2.png)
 Enquanto as Tabelas de Roteamento irão indicar as rotas de conexão entre subnets, os grupos de segurança irão definir as permmissões, portas e protocolos que irão ocorrer entre as subnets.
 
 ### 4.1 Security Group do CLB ( Classic Load Balancer)
