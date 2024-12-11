@@ -4,6 +4,7 @@
 
 
 # Introdução
+![Topologia Projeto](Imagens/image.png)
 A Atividade da Sprint 4 da Estágio da Compass UOL solicitou a criação de um stack Wordpress conteinerizada. Com as instâncias do WordPress se conectando a um serviço RDS da Amazon (MySQL), e os arquivos estáticos do WordPress sendo armazenados em um EFS montado nas instâncias EC2. Sendo necessário utilizar o Load Balancer como ponto para tráfico inbound para as redes privadas - expor-las. Ademais, Auto-Scaling, ajustando automaticamente o número de instâncias EC2 em funcionamento.
 
 E esse projeto buscando aproveitar a proposta, tentou adotar com a utilização do AWS CLI no seu Inteiriço como também a implementação da infraestrutura em 3 tiers. Afim de tentar consolidar os conhecimento propostos da atividade, ademais explorando de maneira brevê a vasta gama de opções e customizações disponibilizadas pelos serviços da Amazon Web Services - AWS.
@@ -301,7 +302,7 @@ aws ec2 create-tags \
 --------
 
 ### 3.2 - Criação das Tabelas de Roteamento
-
+![Tabelas](Imagens/Captura de tela 2024-12-11 091053.png)
 <details>
 <summary>Comando Tabelas de Roteamento</summary>
 ~~~~ bash
