@@ -302,7 +302,7 @@ aws ec2 create-tags \
 --------
 
 ### 3.2 - Criação das Tabelas de Roteamento
-![Tabelas](Imagens/Captura de tela 2024-12-11 091053.png)
+![Tabelas](Imagens/Captura\ de\ tela\ 2024-12-11\ 091053.png)
 <details>
 <summary>Comando Tabelas de Roteamento</summary>
 ~~~~ bash
