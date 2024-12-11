@@ -302,7 +302,7 @@ aws ec2 create-tags \
 --------
 
 ### 3.2 - Criação das Tabelas de Roteamento
-![Tabelas](Imagens/Captura\ de\ tela\ 2024-12-11\ 091053.png)
+![Tabelas](Imagens/imagen3.png)
 <details>
 <summary>Comando Tabelas de Roteamento</summary>
 ~~~~ bash
@@ -668,6 +668,8 @@ EC2_INSTANCE_PAZ1_ID=$(aws ec2 run-instances \
 ~~~
 
 ### 8.1 Funcionamento do Wordpress
+![Tabelas](Imagens/imagen4.png)
+![Tabelas](Imagens/imagen5.png)
 Após a confirmação da serviço do wordpress, foi feita a configuração do usuário admin e senha, e confirmação do funcionamento do site, ademais a configuração do DNS automãtico do load balancer como URL do site Wordpress. Haja vista que isso será utilizado para confirmação do funcionamento do load balancer (CLB) junto às instâncias privadas ou com o Auto Scaling.
 
 
