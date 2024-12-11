@@ -6,7 +6,7 @@
 # Introdução
 A Atividade da Sprint 4 da Estágio da Compass UOL solicitou a criação de um stack Wordpress conteinerizada. Com as instâncias do WordPress se conectando a um serviço RDS da Amazon (MySQL), e os arquivos estáticos do WordPress sendo armazenados em um EFS montado nas instâncias EC2. Sendo necessário utilizar o Load Balancer como ponto para tráfico inbound para as redes privadas - expor-las. Ademais, Auto-Scaling, ajustando automaticamente o número de instâncias EC2 em funcionamento.
 
-E esse projeto buscando aproveitar a proposta, tentou adotar com a utilização do AWS CLI no seu Inteiriço afim de melhor consolidar os conhecimento propostos da atividade, ademais explorando de maneira brevê a vasta gama de opções e customizações disponibilizadas pelos serviços da Amazon Web Services - AWS.
+E esse projeto buscando aproveitar a proposta, tentou adotar com a utilização do AWS CLI no seu Inteiriço como também a implementação da infraestrutura em 3 tiers. Afim de tentar consolidar os conhecimento propostos da atividade, ademais explorando de maneira brevê a vasta gama de opções e customizações disponibilizadas pelos serviços da Amazon Web Services - AWS.
 
 
 - [Introdução](#introdução)
@@ -851,7 +851,5 @@ aws autoscaling attach-load-balancers --auto-scaling-group-name WP_ALG1 --load-b
 # Health check da conexão periodica das instâncias pelo CLB
 aws autoscaling update-auto-scaling-group   --auto-scaling-group-name WP_ALG1   --health-check-type ELB   --health-check-grace-period 300
 ~~~
-
-
 # Conclusões Finais e Agradecimentos
-
+Com a infraestrutura  configurada com sucesso. O Auto Scaling funcionando, as EC2 já configuradas para baixar o Docker e configurar o WordPress utilizando o Docker Compose. Com o acesso pelo DNS do Load Balancer estando live. É com grande felicidade que agradeço a Compass pelo projeto e oportunidade de estar construindo os conhecimentos adquiridos durante este, que mesmo simples possui um grande volume de conhecimentos essenciais tanto na área de DevOps quanto na de Tecnológia da Informação, decerto contribuindo fortemente na minha jornada na área e meu objetivo alvo de perfil como profissional em DevOps.
